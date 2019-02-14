@@ -93,8 +93,8 @@ struct Network {
  *
  * @return IoT_Error_t - successful initialization or TLS error
  */
-IoT_Error_t iot_tls_init(Network *pNetwork, char *pRootCALocation, char *pDeviceCertLocation,
-						 char *pDevicePrivateKeyLocation, char *pDestinationURL,
+IoT_Error_t iot_tls_init(Network *pNetwork, const char *pRootCALocation, const char *pDeviceCertLocation,
+                         const char *pDevicePrivateKeyLocation, const char *pDestinationURL,
 						 uint16_t DestinationPort, uint32_t timeout_ms, bool ServerVerificationFlag);
 
 /**
